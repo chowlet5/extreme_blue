@@ -107,9 +107,9 @@ def bluecoeff(n):
     b = value[1]
     return a,b
 
-def extreme_blue(peaks,MRI,max_min):
+def extreme_blue(peaks,MRI,max_min='max'):
 
-    [a,b] = bluecoeff(len(peaks))
+    [ai,bi] = bluecoeff(len(peaks))
 
     speed = []
 
@@ -121,8 +121,8 @@ def extreme_blue(peaks,MRI,max_min):
     u = 0
     b = 0
     for j in range(len(peaks)):
-        u +=a[j]*x_max[j]
-        b +=b[j]*x_max[j]
+        u +=ai[j]*x_max[j]
+        b +=bi[j]*x_max[j]
 
     mu = u
     sigma = b
