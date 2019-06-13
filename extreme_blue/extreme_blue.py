@@ -114,15 +114,15 @@ def extreme_blue(peaks,MRI,max_min='max'):
     speed = []
 
     if max_min == 'max':
-        x_max = peaks.sort()
+        peaks.sort()
     else:
-        x_max = peaks.sort(reverse=True) 
+        peaks.sort(reverse=True) 
 
     u = 0
     b = 0
     for j in range(len(peaks)):
-        u +=ai[j]*x_max[j]
-        b +=bi[j]*x_max[j]
+        u +=ai[j]*peaks[j]
+        b +=bi[j]*peaks[j]
 
     mu = u
     sigma = b
