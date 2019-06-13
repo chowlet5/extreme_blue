@@ -1,0 +1,1 @@
+This python package performs extreme value analysis using the BLUE method.
