@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     # Needed to silence warnings (and to be a worthwhile package)
-    name='Lieblein_Blue_Method',
+    name='extreme_blue',
     url='',
     author='Christopher Howlett',
     author_email='chowlet5@uwo.ca',
@@ -11,7 +11,7 @@ setup(
     # Needed for dependencies
     install_requires=[],
     # *strongly* suggested for sharing
-    version='0.1',
+    version='1.0',
     # The license can be anything you like
     license='MIT',
     description='Python package for performing extreme value analysis using the BLUE method',
