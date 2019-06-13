@@ -2,7 +2,7 @@ import math
 
 from bluecoeff import bluecoeff
 
-def blue8(peaks,MRI,max_min):
+def extreme_blue(peaks,MRI,max_min):
 
     [a,b] = bluecoeff(len(peaks))
 
